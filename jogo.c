@@ -13,28 +13,28 @@ typedef struct {
     char correta; // 'A', 'B', 'C', 'D'
 } Pergunta;
 
-// Perguntas por nível
+// Perguntas por nível - TEMÁTICA RELIGIOSA
 Pergunta niveis[TOTAL_NIVEIS][PERGUNTAS_POR_NIVEL] = {
     {
-        {"Qual é a capital de França?", {"A) Madrid", "B) Roma", "C) Paris", "D) Berlim"}, 'C'},
-        {"Quanto é 2 + 2?", {"A) 3", "B) 4", "C) 5", "D) 22"}, 'B'},
-        {"Qual é a cor do céu num dia claro?", {"A) Azul", "B) Vermelho", "C) Cinzento", "D) Verde"}, 'A'},
-        {"Quantos dias tem uma semana?", {"A) 5", "B) 6", "C) 7", "D) 8"}, 'C'},
-        {"Que animal é conhecido como o rei da selva?", {"A) Elefante", "B) Leão", "C) Tigre", "D) Gato"}, 'B'}
+        {"Quem construiu a arca para escapar do dilúvio?", {"A) Abraão", "B) Moisés", "C) Noé", "D) Davi"}, 'C'},
+        {"Qual é o primeiro livro da Bíblia?", {"A) Gênesis", "B) Salmos", "C) Êxodo", "D) João"}, 'A'},
+        {"Quantos mandamentos existem na lei de Deus?", {"A) 5", "B) 7", "C) 10", "D) 12"}, 'C'},
+        {"Quem foi lançado na cova dos leões?", {"A) Elias", "B) Daniel", "C) Jonas", "D) Paulo"}, 'B'},
+        {"Qual é o nome da mãe de Jesus?", {"A) Marta", "B) Isabel", "C) Ana", "D) Maria"}, 'D'}
     },
     {
-        {"Quanto é 5 x 6?", {"A) 30", "B) 11", "C) 56", "D) 60"}, 'A'},
-        {"Qual o menor planeta do sistema solar?", {"A) Marte", "B) Vênus", "C) Mercúrio", "D) Plutão"}, 'C'},
-        {"Quem escreveu 'Dom Quixote'?", {"A) Camões", "B) Cervantes", "C) Shakespeare", "D) Pessoa"}, 'B'},
-        {"Qual a capital de Angola?", {"A) Lubango", "B) Huambo", "C) Luanda", "D) Namibe"}, 'C'},
-        {"Qual o resultado de 10 / 2?", {"A) 2", "B) 10", "C) 5", "D) 8"}, 'C'}
+        {"Quem guiou os israelitas na travessia do Mar Vermelho?", {"A) Josué", "B) Moisés", "C) Arão", "D) Davi"}, 'B'},
+        {"Qual apóstolo negou Jesus três vezes?", {"A) João", "B) Pedro", "C) Tomé", "D) Paulo"}, 'B'},
+        {"Qual era a profissão de Mateus antes de seguir Jesus?", {"A) Pescador", "B) Pastor", "C) Soldado", "D) Cobrador de impostos"}, 'D'},
+        {"Em que monte Jesus foi crucificado?", {"A) Monte Sinai", "B) Monte das Oliveiras", "C) Monte Carmelo", "D) Gólgota"}, 'D'},
+        {"Quantos dias Jesus ficou no deserto sendo tentado?", {"A) 10", "B) 21", "C) 40", "D) 7"}, 'C'}
     },
     {
-        {"Em que continente está o Egito?", {"A) Europa", "B) Ásia", "C) África", "D) América"}, 'C'},
-        {"Qual é o símbolo químico da água?", {"A) H", "B) O2", "C) CO2", "D) H2O"}, 'D'},
-        {"Quem descobriu o Brasil?", {"A) Cabral", "B) Colombo", "C) Vasco da Gama", "D) Américo Vespúcio"}, 'A'},
-        {"Quantos segundos tem um minuto?", {"A) 100", "B) 60", "C) 30", "D) 90"}, 'B'},
-        {"Qual é a moeda oficial de Angola?", {"A) Real", "B) Euro", "C) Kwanza", "D) Dólar"}, 'C'}
+        {"Quem teve uma visão do Apocalipse na ilha de Patmos?", {"A) Paulo", "B) Pedro", "C) João", "D) Tiago"}, 'C'},
+        {"Qual rei teve um sonho com uma estátua de vários materiais?", {"A) Davi", "B) Salomão", "C) Ezequias", "D) Nabucodonosor"}, 'D'},
+        {"Qual é o menor versículo da Bíblia?", {"A) 'Jesus chorou'", "B) 'Deus é amor'", "C) 'Orai sem cessar'", "D) 'Sede santos'"}, 'A'},
+        {"Qual profeta desafiou os profetas de Baal no Monte Carmelo?", {"A) Isaías", "B) Jeremias", "C) Elias", "D) Ezequiel"}, 'C'},
+        {"Qual apóstolo teve a visão do lençol com animais impuros?", {"A) Paulo", "B) Pedro", "C) João", "D) Tiago"}, 'B'}
     }
 };
 
@@ -65,7 +65,7 @@ int main() {
         int tentativas = 3;
         int perdeu = 0;
 
-        printf("\n=== Bem-vindo ao Quiz, %s! ===\n", nome);
+        printf("\n=== Bem-vindo ao Quiz Bíblico, %s! ===\n", nome);
 
         for (int nivel = 0; nivel < TOTAL_NIVEIS; nivel++) {
             printf("\n--- Nível %d ---\n", nivel + 1);
